@@ -10,6 +10,11 @@ Technologies used are :-
    *MySQL
    *AJAX
    
-   homepage is mismatch_homepage.php
+Homepage is mismatch_homepage.php
   
-visit https://phraseologic-chimne.000webhostapp.com for working example
+visit https://phraseologic-chimne.000webhostapp.com for working sample
+sample account1 :- username = test1 
+                  password = testone
+sample account2 :- username = test2 
+                  password = testtwo
+

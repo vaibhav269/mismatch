@@ -1,0 +1,33 @@
+#response_form{
+	padding:30px;
+	display:table;
+}
+#response_table
+{ 
+	padding:30px;
+	display:table;	
+}
+.content{
+	width:70%;
+	border:3px solid brown;
+	padding:0px;
+}
+#form_tag{
+	margin:0;
+	
+	border:3px solid blue;
+}
+
+.response_form_row{
+	display:table-row;	
+}
+.response_form_cell{
+	display:table-cell;	
+}
+
+.response_table_row{
+	display:table-row;
+}
+.response_table_cell{
+	display:table-cell;
+}

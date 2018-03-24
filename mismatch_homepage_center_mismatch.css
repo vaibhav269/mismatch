@@ -1,0 +1,59 @@
+.records{
+	display: block;
+	/border: 3px solid pink;
+	box-shadow: 4px 4px 8px 2px rgba(0, 0, 0, 0.2);
+	overflow: auto;
+	margin: 30px;
+	text-align: center;
+}
+
+h2{
+	display:block;
+	font-family:Monotype Corsiva,Georgia,serif;
+	margin-top:0px;
+	margin-right:50px;
+	text-decoration:none;
+	color:#0070FF;
+	border-bottom:2px solid red;
+	width:auto;
+	height:auto;
+	padding:20px;
+	padding-right:30px;
+}
+
+.records:hover{
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+}
+
+.records .img_data{
+	clear:both;
+	display: inline;
+	float:left;
+	width: 50%;
+	max-height:40vh;
+	text-align: center;
+	padding: 20px;
+}
+
+.records .user_img{
+	height:200px;
+	width:auto;
+}
+
+.recods .text_data{
+	display: inline;
+	max-width: 50%;
+}
+
+.records .prof_btn{
+	text-align:center;
+	background-color: green;
+	text-decoration: none;
+	border: none;
+	color: white;
+	width:100%;
+}
+.records .prof_btn:hover{
+	background-color: green;
+	cursor: pointer;
+}

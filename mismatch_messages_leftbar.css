@@ -1,0 +1,20 @@
+#mismatch_recent_messages_list{
+  text-align: center;
+  border-right:3px solid black;
+    width:20vw;
+    margin: 2vw;
+    float:left;
+}
+
+#mismatch_recent_messages_list .messages_recent_names a{
+  display: block;
+  text-decoration: none;
+  color:white;
+  width: 100%;
+}
+
+#mismatch_recent_messages_list .messages_recent_names{
+  background-color: brown;
+  margin:10px;
+  padding: 3px;
+}

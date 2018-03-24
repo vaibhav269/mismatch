@@ -1,0 +1,37 @@
+#mismatched_topics{
+  text-align: center;
+  margin:auto;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 19px;
+    font-size:100%;
+		font-family: arial;
+		animation: show_slow 0.1s linear forwards;
+		}
+
+	@keyframes show_slow {
+				from{transform: scale(0);}
+				to{transform:scale(1);}
+		}
+
+.table{
+  width:70%;
+    display:table;
+}
+
+.table-row{
+  text-align: center;
+  display: table-row;
+}
+
+.table-cell1,.table-cell2{
+  width: 50%;
+  display: table-cell;
+}
+.table-cell1{
+  color:red;
+  /background-color: red;
+}
+.table-cell2{
+  color:green;
+  /background-color: green;
+}

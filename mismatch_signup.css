@@ -1,0 +1,152 @@
+body{
+	padding:0px;
+	margin:0px;
+	font-size:20px;
+}
+#header{
+	display:block;
+	height:auto;
+	overflow:hidden;
+	/text-align:center;
+	border-bottom:10px solid orange;
+	margin:20px;
+	padding-bottom:0px;
+}
+
+#header h1{
+	display:inline;
+	color:#00FF0f;
+	overflow:none;
+	font-family:Monotype Corsiva,Georgia,serif;
+	padding-top:20px;
+	font-size:130%;
+	}
+
+#header img{
+	height:50px;
+	margin-left:-100px;
+	width:auto;
+	animation:img 1s ease-in-out 0.8s forwards;
+}
+
+@keyframes img{
+	from{margin-left:-100px;}
+	to{margin-left:5px;}
+
+}
+
+.buttons{
+	float:right;
+	display:inline;
+	border:none;
+	float:right;
+	margin-right:20px;
+	margin-top:5px;
+	cursor: pointer;
+	}
+
+#header #login-open-button,#logout-button,#profile-button,#notification-button{
+	border:none;
+	background-color:#FF0000;
+	font-size:70%;
+	color:white;
+	padding:10px;
+	padding-left:58.5px;
+	padding-right:58.5px;
+	cursor: pointer;
+	opacity:0;
+	animation:login_open_button 0.4s ease-in-out 0.3s forwards;
+}
+
+#header #login-open-button:hover,#logout-button:hover,#profile-button:hover,#notification-button:hover
+{
+	background-color:#00BFFF;
+}
+
+
+@keyframes login_open_button{
+	from{transform:scale(0);opacity:0;}
+	to{transform:scale(1);opacity:1;}
+
+}
+
+#form{
+		font-family:Bebas Neue,Verdana,Geneva,arial,sans-serif;
+		text-align:center;
+		line-height:100%;
+		font-size:110%;
+		display:table;
+		width:600px;
+		margin:auto;
+}
+
+input{
+	margin:10px;
+}
+
+.trow{
+	display:table-row;
+}
+
+.tcell{
+	display:table-cell;
+}
+
+input[type="text"],input[type="password"],input[type="date"],input[type="file"]
+{
+	font-weight:bold;
+	padding:4px;
+	font-size:90%;
+	border:1px solid #c2c2c4;
+	border-radius:5px;
+}
+
+input[type="file"]
+{
+	border:none;
+}
+
+input[type="Submit"]
+{
+	 padding: 14px 28px;
+    text-align: center;
+    text-decoration: none;
+	border:none;
+	background-color:#4CAF50;
+	-webkit-transition-duration:0.1s; /* Safari */
+    transition-duration:0.1s;
+    cursor: pointer;
+	color: white;
+	border-radius:8px;
+	font-size:100%;
+	 font-family:Georgia,serif;
+	 box-shadow:0 7px #999;
+}
+
+input[type="Submit"]:hover
+{
+	background-color: #4CAF50;
+
+}
+
+input[type="Submit"]:active
+{
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.birthdate{
+	padding:4px;
+	font-size:70%;
+	border:1px solid #c2c2c4;
+	border-radius:5px;
+	margin-top:9px;
+}
+.error_invalid_data{
+	padding: 5px;
+	margin-left:17px;
+	margin-right:17px;
+	display:block;
+	background-color:#ffebe8;
+	border:1px solid #dd3c10;
+}

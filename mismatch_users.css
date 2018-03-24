@@ -1,0 +1,344 @@
+html{
+	width:100%;
+	transform: scale(0);
+	animation:pageLoad 0.5s ease-in-out forwards;
+	animation-iteration-count: 1;
+	animation-direction:alternate;
+}
+
+@keyframes pageLoad{
+from{transform: scale(0,1); }
+	to{transform: scale(1,1);}
+}
+
+body{
+	padding:0px;
+	margin:0px;
+	font-size:20px;
+}
+
+#header{
+	display:block;
+	height:auto;
+	overflow:hidden;
+	/text-align:center;
+	/border-bottom:10px solid orange;
+	margin:20px;
+	padding-bottom:0px;
+}
+
+#header h1{
+	display:inline;
+	color:#00FF0f;
+	overflow:none;
+	font-family:Monotype Corsiva,Georgia,serif;
+	padding-top:20px;
+	font-size:130%;
+	}
+
+#header img{
+	height:50px;
+	margin-left:-100px;
+	width:auto;
+	animation:img 1s ease-in-out 0.8s forwards;
+}
+
+
+@keyframes img{
+	from{margin-left:-100px;}
+	to{margin-left:5px;}
+
+}
+#guyprop{
+	max-width:70%;
+}
+.buttons{
+	float:right;
+	display:inline;
+	border:none;
+	float:right;
+	margin-right:20px;
+	margin-top:5px;
+	cursor: pointer;
+	overflow-y:hidden;
+	}
+
+#header #login-open-button,#logout-button,#profile-button,#notification-button,#messages-button{
+	border:none;
+	/background-color:#0098FF;
+	background-color:#FF0000;
+	font-size:70%;
+	color:white;
+	padding:10px;
+	padding-left:58.5px;
+	padding-right:58.5px;
+	cursor: pointer;
+	opacity:0;
+	animation:login_open_button 0.4s ease-in-out 0.3s forwards;
+}
+
+#header #login-open-button:hover,#logout-button:hover,#profile-button:hover,#notification-button:hover,#messages-button:hover
+{
+	background-color:#00BFFF;
+}
+
+
+@keyframes login_open_button{
+	from{transform:scale(0);opacity:0;}
+	to{transform:scale(1);opacity:1;}
+
+}
+
+#logout-button,#profile-button,#notification-button,#messages-button{
+}
+
+#logout-button{
+	animation:login_open_button 0.4s ease-in-out forwards;
+}
+#profile-button{
+	animation:login_open_button 0.4s ease-in-out 0.3s forwards;
+}
+#messages-button{
+	animation:login_open_button 0.4s ease-in-out 0.6s forwards;
+}
+
+#notification-button{
+	animation:login_open_button 0.4s ease-in-out 0.8s forwards;
+}
+
+#header #signup-open-button{
+	border:none;
+	/background-color:#0098FF;
+	background-color:#FF0000;
+	font-size:70%;
+	color:white;
+	padding:10px;
+	padding-left:54px;
+	padding-right:54px;
+	cursor: pointer;
+	animation:signup_open_button 0.4s ease-in-out forwards;
+	opacity:0;
+}
+
+#header #signup-open-button:hover
+{
+	background-color:#00BFFF;
+	}
+
+@keyframes signup_open_button{
+		from{transform:scale(0);opacity:0;}
+	to{transform:scale(1);opacity:1;}
+
+}
+
+
+#modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100vh; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+	padding:10px;
+}
+
+/* The Close Button */
+.close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+form {
+    border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#steps-content{
+	margin:20px;
+	width:75%;
+	text-align:center;
+	display:inline-block;
+	/background-color:red;
+
+}
+
+#login-button,#cancel-button
+{
+	width:100%;
+	border:none;
+	background-color:#00AA00;
+	font-size:70%;
+	color:white;
+	padding:10px;
+	padding-left:58.5px;
+	padding-right:58.5px;
+	cursor: pointer;
+}
+
+
+#cancel-button{
+	margin-top:10px;
+	border:none;
+	background-color:red;
+}
+
+#login-button:hover{
+	background-color:#008800;
+}
+
+#cancel-button:hover{
+	background-color:#AA0000;
+	}
+
+
+	#userProfile_center_record{
+			margin-left:30px;
+			/box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			width:70%;
+			/text-align:center;
+			margin-bottom:30px;
+			color:black;
+			/border-right :3px dashed brown;
+	}
+
+	#userProfile_center_record #userProfile_img_data{
+		box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+		text-align:center;
+		/background-color:green;
+		padding-top:10px;
+		padding-bottom:10px;
+		/border-bottom:2px solid #CCC;
+		overflow: visible;
+	}
+
+	#userProfile_center_record #userProfile_user_img{
+		margin-left: 3px;
+		margin-right: 3px;
+		height:84vh;
+		max-width: 95%;
+	}
+
+	#users_info{
+	}
+
+	#userProfile_center_record #userProfile_center_text_data{
+		display: block;
+		margin:auto;
+		box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+			border-radius: 19px;
+		opacity:1;
+		font-size:100%;
+		font-family: arial;
+		animation: show_slow 0.09s linear forwards;
+		}
+
+	@keyframes show_slow {
+				from{transform: scale(0);}
+				to{transform:scale(1);}
+		}
+
+.table{
+	text-align: left;
+	display: table;
+}
+
+#userProfile_center_text_data .table-row{
+	display: table-row;
+}
+
+#userProfile_center_text_data .table-cell1,#userProfile_center_text_data .table-cell2{
+	padding: 15px;
+	line-height:80%;
+	font-size: 120%;
+	display: table-cell;
+}
+
+#userProfile_center_text_data .table-cell1{
+	color:red;
+	padding-right:2vw;
+	/border-right:2px solid red;
+}
+
+#userProfile_center_text_data .table-cell2{
+	color:#009999;
+	color:green;
+	font-family: ;
+	padding-left: 2vw;
+}
+
+#userProfile_center_record #userProfile_center_btn{
+	width:100%;
+}
+
+#userProfile_center_btn .userProfileButton {
+	margin-top:4vh;
+	width:33%;
+ 	background-color: red;
+	border:none;
+	color:white;
+	font-size: 80%;
+	line-height: 200%;
+	cursor:pointer;
+}
+
+#user_data_container{
+	width:100%;
+	margin-top: 10vh;
+}
+
+#userProfile_center_mismatch_score{
+	display: none;
+}
+
+#userProfile_center_mismatch_chat{
+	display: none;
+}

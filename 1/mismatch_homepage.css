@@ -1,0 +1,165 @@
+body{
+	padding:0px;
+	margin:0px;
+	background-color:#fffcf9;
+	font-size:20px;
+}
+
+#header{
+	display:block;
+	height:auto;
+	overflow:hidden;
+	/text-align:center;
+	border-bottom:10px solid orange;
+	margin:20px;
+	padding-bottom:0px;
+}
+
+#header h1{
+	display:inline;
+	color:green;
+	overflow:none;
+	/margin-left:100px;
+	font-family:Georgia,serif;
+	padding-top:20px;
+	font-size:130%;
+	}
+	
+#header img{
+	height:45px;
+	width:auto;
+}
+	
+.buttons{
+	float:right;
+	display:inline;
+	border:none;	
+	float:right;
+	margin-right:20px;
+	margin-top:5px;
+	cursor: pointer;
+	}
+	
+#header #login-open-button{
+	border:none;
+	background-color:#00AA00;
+	font-size:70%;
+	color:white;
+	padding:10px;
+	padding-left:58.5px;
+	padding-right:58.5px;
+	cursor: pointer;
+}
+
+#header #signup-open-button{
+	border:none;
+	background-color:#00AA00;
+	font-size:70%;
+	color:white;
+	padding:10px;
+	padding-left:54px;
+	padding-right:54px;
+	cursor: pointer;
+}
+
+
+#modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0; 
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#users{
+	line-height:10%;
+	margin:30px;
+	/border:3px solid orange;
+	/width:50%;
+	DISPLAY:INLINE;
+	padding:10px;
+	float:right;
+	text-align:right;
+}
+
+.records{
+		border-bottom:3px solid green;	
+		margin:0px;
+		padding:0px;
+		overflow:hidden;
+		display:inline-block;
+		
+}
+
+
+.records #text_data{	
+		float:right;
+		margin-left:10px;		
+}
+

@@ -1,0 +1,91 @@
+#users{
+	line-height:10%;
+	margin-top:30px;
+	margin-right:-100px;
+	padding-top:0px;
+	border-left:3px solid white;
+	padding:10px;
+	padding-left:20px;
+	padding-right:15.5px;
+	float:right;
+	text-align:right;
+	opacity:0;
+	animation:user 0.6s forwards;
+}
+
+@-webkit-keyframes user {
+    from {margin-right:-100px;opacity:0;}
+    to {margin-right:10px;opacity:1;}
+}
+
+@keyframes user {
+    from {margin-right:-100px;opacity:0;}
+    to {margin-right:10px;opacity:1;}
+}
+
+#record{
+		margin-right:30px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		width:24vw;
+		text-align:center;
+		margin-bottom:30px;
+		color:black;
+}
+
+#record:hover{
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+}
+
+#record #myprofile_sidebar_text_data{
+	font-size:100%;
+	font-family: arial;
+	color:#009999;
+}
+
+#record #img_data{
+	text-align:center;
+	/background-color:green;
+	width:100%;
+	height:40vh;
+	padding-top:10px;
+	padding-bottom:10px;
+	border-bottom:2px solid #CCC;
+	overflow: visible;
+}
+
+#record #user_img{
+	margin-left: 3px;
+	margin-right: 3px;
+	height:40vh;
+	max-width: 95%;
+}
+
+#users #myprofile_sidebar_submit_btn{
+	display: none;
+	border:none;
+	background-color:red;
+	color:white;
+	line-height: 250%;
+	width:100%;
+		cursor: pointer;
+}
+
+#users #myprofile_sidebar_edit_btn{
+	border:none;
+	background-color:red;
+	color:white;
+	line-height: 250%;
+	width:100%;
+	cursor: pointer;
+}
+
+#users #city_input,#users #state_input{
+	line-height: 100%;
+	width:90%;
+	margin:3px;
+	font-size:90%;
+	padding: 2px;
+	border:1px solid #c2c2c4;
+	border-radius:5px;
+	color:#009999;
+}

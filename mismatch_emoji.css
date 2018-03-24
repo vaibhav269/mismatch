@@ -1,0 +1,29 @@
+#emoji_box{
+  padding: 14px;
+  padding-right: 2vw;
+  display: none;
+  overflow:hidden;
+  /border: 3px solid black;
+  height:47vh;
+  width: cover;
+}
+
+#emoji_box:hover{
+  padding-right: 2vw;
+  overflow:auto;
+  overflow-x: visible;
+}
+
+.emoji:hover{
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+#emoji_show_btn,#emoji_hide_btn{
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+#emoji_hide_btn{
+  display: none;
+}
